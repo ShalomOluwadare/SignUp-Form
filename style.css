@@ -1,0 +1,82 @@
+:root {
+  --color-text: white;
+  --color-text2: rgb(217, 208, 184);
+  --color-back1: black;
+  --color-back2: rgb(180, 135, 62);
+}
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 1.1em;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.form-container {
+  background-color: var(--color-back2);
+  border: 2px solid grey;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+label[for="form"] {
+  font-size: 2rem;
+}
+#footer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+button {
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 0.5em;
+  margin-bottom: 10px;
+  background-color: var(--color-back1);
+}
+button {
+  color: var(--color-text);
+}
+button:hover {
+  background-color: transparent;
+}
+input {
+  height: 20px;
+  border-color: transparent;
+  border-radius: 0.4rem;
+}
+input:hover,
+input:focus {
+  border-color: black;
+  box-shadow: 0px 5px 5px;
+}
+span {
+  color: var(--color-text2);
+}
+#form {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 50px;
+}
+label {
+  display: block;
+  padding-top: 10px;
+}
+#credit {
+  color: aliceblue;
+  position: fixed;
+  bottom: 0;
+}
